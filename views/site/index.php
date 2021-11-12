@@ -51,3 +51,10 @@ $this->title = 'My Yii Application';
 
     </div>
 </div>
+
+<?php
+use app\models\Config;
+echo Config::findOne([
+    'code' => 'A001',
+])->value;
+?>
